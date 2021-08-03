@@ -1,8 +1,10 @@
 import feedparser
 import dateutil.parser
+from celery import shared_task
 from serve_news.models import Article
 
 
+@shared_task()
 def parse():
 
     params = ['AAPL', 'TWTR', 'GC=F(GOLD)', 'INTC']

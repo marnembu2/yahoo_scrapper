@@ -1,12 +1,18 @@
 from django.shortcuts import render
-from django.http import JsonResponse
 from django.core.paginator import Paginator
 from .models import Article
 from get_news.parser import parse
+from yahoo_scrapper.tasks import start_scrapper
 
 
 # Create your views here.
 def news(request):
+    start_scrapper.delay()
+    start_scrapper.delay()
+    start_scrapper.delay()
+    start_scrapper.delay()
+    start_scrapper.delay()
+    start_scrapper.delay()
 
     articles = Article.objects.values()
     page = request.GET.get('page', 1)
@@ -25,6 +31,5 @@ def news(request):
 
 def test(request):
     data = parse()
-
     return render(request, 'test.html', {'data': data})
 
