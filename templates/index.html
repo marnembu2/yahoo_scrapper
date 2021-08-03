@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="padding: 10px; font-size: 12px">
+    <table class="table table-bordered">
+        <thead>
+            <td>ID</td>
+            <td>Title</td>
+            <td>Description</td>
+            <td>Link</td>
+            <td>Publish date</td>
+        </thead>
+        <tbody>
+            {% for article in articles %}
+                <tr>
+                    <td>{{ article.guid }}</td>
+                    <td>{{ article.title }}</td>
+                    <td>{{ article.description }}</td>
+                    <td><a href="{{ article.link }}" target="_blank">LINK</a></td>
+                    <td>{{ article.pubDate }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            {% if articles.has_previous %}
+                <li class="page-item"><a class="page-link" href="?page={{ articles.previous_page_number }}">Previous</a></li>
+            {% endif %}
+
+            {% for i in articles.paginator.page_range %}
+                {% if articles.number == i %}
+                    <li class="page-item"><a class="page-link">{{ i }}</a></li>
+                {% else %}
+                    <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                {% endif %}
+            {% endfor %}
+
+            {% if articles.has_next %}
+                <li class="page-item"><a class="page-link" href="?page={{ articles.next_page_number }}">Next</a></li>
+            {% endif %}
+      </ul>
+    </nav>
+</body>
+</html>
