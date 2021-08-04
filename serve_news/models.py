@@ -1,7 +1,6 @@
 from django.db import models
 
 
-# Create your models here.
 class Article(models.Model):
     title = models.TextField(max_length=1000)
     description = models.TextField(null=True, blank=True)
@@ -9,6 +8,7 @@ class Article(models.Model):
     guid_is_perma_link = models.BooleanField(default=False)
     link = models.TextField(max_length=1000)
     pubDate = models.DateTimeField()
+    created_at = models.DateTimeField(auto_now_add=True, null=True)
 
     def __str__(self):
-        return self.title + self.description
+        return self.guid + ' | ' + self.title + ' | ' + self.description

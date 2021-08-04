@@ -1,22 +1,12 @@
 from django.shortcuts import render
 from django.core.paginator import Paginator
 from .models import Article
-from get_news.parser import parse
-from yahoo_scrapper.tasks import start_scrapper
 
 
-# Create your views here.
 def news(request):
-    start_scrapper.delay()
-    start_scrapper.delay()
-    start_scrapper.delay()
-    start_scrapper.delay()
-    start_scrapper.delay()
-    start_scrapper.delay()
 
     articles = Article.objects.values()
     page = request.GET.get('page', 1)
-
     paginator = Paginator(articles, 10)
 
     try:
@@ -26,10 +16,4 @@ def news(request):
     except EmptyPage:
         articles = paginator.page(paginator.num_pages)
 
-    return render(request, 'index.html', {'articles': articles})
-
-
-def test(request):
-    data = parse()
-    return render(request, 'test.html', {'data': data})
-
+    return render(request, 'news-view.html', {'articles': articles})

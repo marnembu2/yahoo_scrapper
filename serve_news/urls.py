@@ -4,5 +4,4 @@ from django.conf.urls import include, url
 
 urlpatterns = [
     url(r'^$', views.news),
-    url(r'^test/$', views.test)
 ]
