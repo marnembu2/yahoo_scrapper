@@ -13,7 +13,8 @@
 
     <h1>Run app steps:</h1>
     <ol>
-        <li><b>sudo chmod +x run-app.sh && ./run-app.sh</b> - create containers and run</li>
+        <li><b>docker-compose up -d</b> - create containers and run</li>
+        <li><b>docker-compose exec rest-srv python3 manage.py migrate --noinput</b> - run database migrations</li>
         <li><b>docker-compose exec rest-srv python3 manage.py createsuperuser --username=user1 --email=user1@example.com</b> - create super user so user can create cronjob in admin panel</li>
         <li><b>docker-compose exec rest-srv celery -A yahoo_scrapper worker --beat --loglevel=info</b> - start celary scheduled jobs</li>
 
