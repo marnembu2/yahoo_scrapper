@@ -9,6 +9,7 @@ class Article(models.Model):
     link = models.TextField(max_length=1000)
     pubDate = models.DateTimeField()
     created_at = models.DateTimeField(auto_now_add=True, null=True)
+    type = models.TextField(max_length=100, null=True)
 
     def __str__(self):
         return self.guid + ' | ' + self.title + ' | ' + self.description

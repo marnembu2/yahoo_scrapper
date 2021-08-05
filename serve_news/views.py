@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.core.paginator import Paginator
+from django.http import JsonResponse
 from .models import Article
 
 
@@ -17,3 +18,14 @@ def news(request):
         articles = paginator.page(paginator.num_pages)
 
     return render(request, 'news-view.html', {'articles': articles})
+
+
+def raw_data(request):
+
+    if request.GET.get('type'):
+        articles = Article.objects.filter(type=request.GET.get('type')).values()
+    else:
+        articles = Article.objects.all().values()
+
+    return JsonResponse({'data': list(articles)})
+

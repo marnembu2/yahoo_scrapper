@@ -6,7 +6,7 @@ from serve_news.models import Article
 from django_celery_beat.models import PeriodicTask, IntervalSchedule
 
 
-def create_article(title, description, id, guid_is_perma_link, link, pubDate):
+def create_article(title, description, id, guid_is_perma_link, link, pubDate, type):
     """
     Function for creating Article object
     :param title:
@@ -23,7 +23,8 @@ def create_article(title, description, id, guid_is_perma_link, link, pubDate):
         guid=id,
         guid_is_perma_link=guid_is_perma_link,
         link=link,
-        pubDate=pubDate
+        pubDate=pubDate,
+        type=type
     )
 
 
@@ -65,7 +66,8 @@ def parse():
                     item.id,
                     item.guidislink,
                     item.link,
-                    dateutil.parser.parse(item.published)
+                    dateutil.parser.parse(item.published),
+                    string
                 )
 
                 num_of_inserted += 1

@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bacd60a8-ef54-4734-adb1-baa784ae3a1c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/welcome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yahoo_scrapper/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_news/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_news/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_news/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_news/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serve_news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/serve_news/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serve_news/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/serve_news/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serve_news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/serve_news/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serve_news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/serve_news/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/welcome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/bin/Activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/Activate.ps1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Django-3.2.6.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Django-3.2.6.dist-info/RECORD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/asgiref-3.4.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/asgiref-3.4.1.dist-info/RECORD" afterDir="false" />
@@ -22,10 +18,6 @@
       <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pytz-2021.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pytz-2021.1.dist-info/RECORD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/six-1.16.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/six-1.16.0.dist-info/RECORD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/sqlparse-0.4.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/sqlparse-0.4.1.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yahoo_scrapper/celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/yahoo_scrapper/celery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yahoo_scrapper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yahoo_scrapper/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yahoo_scrapper/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/yahoo_scrapper/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yahoo_scrapper/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/yahoo_scrapper/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -96,8 +88,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serve_news/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            <state relative-caret-position="90">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -105,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/serve_news/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="225">
+              <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -117,13 +109,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parser.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="welcome.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/welcome.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_news/parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+            <state relative-caret-position="-207">
+              <caret line="62" column="31" lean-forward="true" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_news/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-120">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,17 +145,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serve_news/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="66" lean-forward="true" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news-view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/news-view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+            <state relative-caret-position="165">
+              <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -166,6 +170,7 @@
       <find>parse_scheduled</find>
       <find>celery_app</find>
       <find>start_scrapper</find>
+      <find>T</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,7 +188,6 @@
         <option value="$PROJECT_DIR$/yahoo_scrapper/celery_beat.py" />
         <option value="$PROJECT_DIR$/yahoo_scrapper/__init__.py" />
         <option value="$PROJECT_DIR$/yahoo_scrapper/settings.py" />
-        <option value="$PROJECT_DIR$/serve_news/urls.py" />
         <option value="$PROJECT_DIR$/yahoo_scrapper/views.py" />
         <option value="$PROJECT_DIR$/yahoo_scrapper/tasks.py" />
         <option value="$PROJECT_DIR$/yahoo_scrapper/celery.py" />
@@ -193,11 +197,12 @@
         <option value="$PROJECT_DIR$/yahoo_scrapper/tests/__init__.py" />
         <option value="$PROJECT_DIR$/get_news/tests.py" />
         <option value="$PROJECT_DIR$/serve_news/tests.py" />
-        <option value="$PROJECT_DIR$/templates/welcome.html" />
-        <option value="$PROJECT_DIR$/serve_news/views.py" />
         <option value="$PROJECT_DIR$/templates/news-view.html" />
+        <option value="$PROJECT_DIR$/serve_news/urls.py" />
         <option value="$PROJECT_DIR$/serve_news/models.py" />
         <option value="$PROJECT_DIR$/get_news/parser.py" />
+        <option value="$PROJECT_DIR$/templates/welcome.html" />
+        <option value="$PROJECT_DIR$/serve_news/views.py" />
       </list>
     </option>
   </component>
@@ -242,7 +247,7 @@
             <path>
               <item name="yahoo_scrapper" type="b2602c69:ProjectViewProjectNode" />
               <item name="yahoo_scrapper" type="462c0819:PsiDirectoryNode" />
-              <item name="yahoo_scrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -325,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628012898102</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test completed, parser completed, code cleaned, project description added, celery implemented">
+      <created>1628082028828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628082028828</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -339,15 +351,15 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.4387417" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3692053" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" weight="0.32930514" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="SciView" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -366,7 +378,8 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="project setup, migrations added, scrapper added, table for presentation added," />
     <MESSAGE value="celery implemented, first task made" />
-    <option name="LAST_COMMIT_MESSAGE" value="celery implemented, first task made" />
+    <MESSAGE value="test completed, parser completed, code cleaned, project description added, celery implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="test completed, parser completed, code cleaned, project description added, celery implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -547,25 +560,8 @@
     <entry file="file:///usr/lib/python3.8/urllib/request.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_news/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/get_news/admin.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get_news/apps.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -591,22 +587,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serve_news/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/news-view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="105">
+          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_news/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve_news/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serve_news/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="90">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_news/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207">
+          <caret line="62" column="31" lean-forward="true" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -618,26 +648,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/news-view.html">
+    <entry file="file://$PROJECT_DIR$/serve_news/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serve_news/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="66" lean-forward="true" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_news/parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        <state relative-caret-position="225">
+          <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
           <folding>
-            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
