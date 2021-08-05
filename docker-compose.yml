@@ -1,0 +1,53 @@
+version: '3.7'
+
+services:
+  rest-srv:
+    build: .
+    command: python3 manage.py runserver 0.0.0.0:8000
+    image: docker/django:srv
+    container_name: django_srv
+    restart: always
+    ports:
+      - 8000:8000
+    environment:
+      - TZ=Europe/Belgrade
+    env_file:
+      - .env.dev
+    depends_on:
+      - db
+    networks:
+      - webnetwork
+
+  db:
+    image: postgres:12.0-alpine
+    volumes:
+      - ./data/db-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    container_name: postgres_db
+    environment:
+      - POSTGRES_USER=yahoo_scrapper
+      - POSTGRES_PASSWORD=12345678
+      - POSTGRES_DB=yahoo_scrapper
+      - TZ=Europe/Belgrade
+    networks:
+      - webnetwork
+
+  redis:
+    image: redis:4.0.9
+    command: ["redis-server", "--appendonly", "yes"]
+    hostname: redis
+    ports:
+      - 6379:6379
+    volumes:
+      - ./data/redis-data:/data
+    container_name: redis_db
+    environment:
+      - TZ=Europe/Belgrade
+    restart: always
+    networks:
+      - webnetwork
+
+
+networks:
+  webnetwork:
